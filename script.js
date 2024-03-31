@@ -10,7 +10,7 @@ gsap.to("#context",{
     backgroundColor:"#a1c5d2",
     
 })
-var time = 60;
+var time = 30;
 var score = 0;
 var hitc = 0;
 function makebubble(){

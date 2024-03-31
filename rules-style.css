@@ -4,7 +4,6 @@
     box-sizing: border-box;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     overflow: hidden;
-    color:#fff;
 }
 html,body{
     width:100%;
@@ -13,65 +12,48 @@ html,body{
 #main{
     height:100%;
     width:100%;
-    background-color: rgb(140, 222, 140);
+    display: flex;
+}
+#left{
+    width:40%;
+    height:100%;
+    background-color:#0B5273;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
+#right{
+    width:60%;
+    height:100%;
+    background-color: #0B5273;
+}
 #content{
-    width:50%;
-    height:70%;
-    background-color: #fff;
-    border-radius: 20px;
-}
-#top{
-    height:10%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    text-transform: uppercase;
-    word-spacing: 7px;
-    font-size: 30px;
-    font-weight: 400;
-    background-color: rgb(49, 134, 49);
-    color: #fff;
-    padding:30px;
-    text-decoration: underline;
-}
-#bottom{
-    height:90%;
-    font-size: 20px;
-    display: flex;
-    background-color: black;
     flex-direction: column;
-    align-items: start;
-    padding:50px;
+    align-items: center;
+    flex-wrap: wrap;
+    width:100%;
+    height:50%;
+    background-color: #CFE2E4;
+    color: black;
     text-transform: uppercase;
+    line-height: 50px;
 }
-#dot{
-    font-size: 50px;
+#rules h2{
+    font-weight: 900;
 }
-#arrow{
-    font-size: 30px;
+#rules h3{
+    font-weight: 500;
 }
-#put{
-    position: absolute;
-    left:460px;
-    top:400px;
-
-}
-a{
-    position: relative;
-    top:150px;
-    left:90px;
-}
-#btn{
-    text-align: center;
-    width:500px;
-    height:40px;
-    background-color:rgb(35, 101, 35);
-    font-size: 30px;
+button{
+    padding:10px;
+    background-color: #0B5273;
+    color:#CFE2E4;
     text-transform: uppercase;
+    font-size: 20px;
+    border-radius: 30px;
     cursor: pointer;
+}
+button:hover{
+    background-color: #052e41;
 }
